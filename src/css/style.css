@@ -5,3 +5,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  background-color: #f7f9f8;
+}
+
+main {
+  background-color: #f7f9f8;
+}
+
+.section-1 {
+  background-color: #eaf0ed;
+}
+
+.section-2 {
+  background-color: #f7f9f8;
+}
+
+.section-4 {
+  background-color: #eaf0ed;
+}
+
+.section-5 {
+  background-color: #f7f9f8;
+}
+
+footer {
+  background-color: #222e35;
+}
