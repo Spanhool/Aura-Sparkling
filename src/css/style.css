@@ -77,8 +77,70 @@ nav button img {
   display: flex;
 }
 
+.hr-nav {
+  color: #222e35;
+}
+
 main {
   background-color: #f7f9f8;
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  margin-top: 100px;
+}
+
+.info h6 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-family: "Inter";
+  color: #222e35;
+}
+
+.info h1 {
+  margin-top: 20px;
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 80px;
+  color: #222e35;
+}
+
+.info p {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 300;
+  color: #56676b;
+  line-height: 25px;
+}
+
+.main-info-button {
+  margin-top: 50px;
+}
+
+.main-info-button button {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 18px;
+  border: none;
+  background-color: #222e35;
+  font-family: "Inter";
+}
+
+.main-info-button button a {
+  margin-right: 20px;
+  color: #f7f9f8;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.main-info-button button img {
+  width: 12px;
+}
+
+.main-img img {
+  height: 680px;
 }
 
 .section-1 {
