@@ -145,6 +145,69 @@ main {
 
 .section-1 {
   background-color: #eaf0ed;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 60px clamp(16px, 4vw, 80px);
+  min-height: 100vh;
+}
+
+.img-section-1 {
+  flex: 0 1 550px;
+  min-width: 0;
+}
+
+.img-section-1 img {
+  display: block;
+  width: 550px;
+  height: auto;
+}
+
+.img-section-1 p {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 10px;
+  margin-top: 15px;
+  letter-spacing: 2px;
+}
+
+.info-section-1 {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.info-section-1 h1 {
+  font-family: "Sora";
+  font-weight: 400;
+  font-size: 50px;
+  color: #222e35;
+  margin-bottom: 20px;
+}
+
+.info-section-1 .subtitulo {
+  margin-top: 20px;
+  font-family: "Inter";
+  font-weight: 300;
+  color: #56676b;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.hr-section-1 {
+  width: 50px;
+  margin-top: 20px;
+  color: #222e35;
+}
+
+.frase-section-1 {
+  font-family: "Inter";
+  font-weight: 300;
+  font-size: 10px;
+  color: #56676b;
+  margin-top: 20px;
 }
 
 .section-2 {
