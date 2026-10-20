@@ -214,6 +214,25 @@ main {
   background-color: #f7f9f8;
 }
 
+.title-section-2 {
+  padding-top: 80px;
+  padding-left: 110px;
+}
+
+.section-2 h1 {
+  color: #222e35;
+  font-family: "Sora";
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hr-produtos {
+  width: 1300px;
+  margin-left: 114px;
+  margin-top: 30px;
+  color: #222e35;
+}
+
 .section-4 {
   background-color: #eaf0ed;
 }
