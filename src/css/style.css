@@ -212,6 +212,7 @@ main {
 
 .section-2 {
   background-color: #f7f9f8;
+  padding-bottom: 60px;
 }
 
 .title-section-2 {
@@ -219,7 +220,7 @@ main {
   padding-left: 110px;
 }
 
-.section-2 h1 {
+.title-section-2 h1 {
   color: #222e35;
   font-family: "Sora";
   font-size: 40px;
@@ -227,10 +228,80 @@ main {
 }
 
 .hr-produtos {
-  width: 1300px;
-  margin-left: 114px;
-  margin-top: 30px;
+  width: calc(100% - 32px);
+  max-width: 1300px;
+  margin: 30px auto 0;
+  border: none;
+  height: 2px;
+  background-color: #cad9da;
+}
+
+.hr-produtos-2 {
+  width: calc(100% - 32px);
+  max-width: 1300px;
+  margin: 30px auto 0;
+  border: none;
+  height: 2px;
+  background-color: #ddcecc;
+}
+
+.hr-produtos-3 {
+  width: calc(100% - 32px);
+  max-width: 1300px;
+  margin: 30px auto 0;
+  border: none;
+  height: 2px;
+  background-color: #c2d7ca;
+}
+
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 32px;
+  padding: 40px clamp(16px, 4vw, 80px);
+}
+
+.info-produto {
+  min-width: 0;
+}
+
+.info-produto h1 {
   color: #222e35;
+  font-size: 50px;
+  font-family: "Sora";
+  font-weight: 400;
+}
+
+.subtitulo-produto {
+  font-family: "Inter";
+  color: #56676b;
+  letter-spacing: 2px;
+  font-size: 10px;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.descricao-produto {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #56676b;
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+}
+
+.img-produto {
+  flex: 0 1 350px;
+  min-width: 0;
+}
+
+.img-produto img {
+  display: block;
+  width: 350px;
+  height: auto;
 }
 
 .section-4 {
