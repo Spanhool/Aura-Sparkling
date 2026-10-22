@@ -12,11 +12,15 @@
         <div class="nav-logo">
           <p><span>AURA</span> SPARKLING</p>
         </div>
-        <div class="nav-links">
-          <a href="">Inicio</a>
-          <a href="">Experiência</a>
-          <a href="">Sabores</a>
-          <a href="">Momentos</a>
+        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#sabores">Sabores</a>
+          <a href="#momentos">Momentos</a>
         </div>
         <div class="nav-bottom">
           <button>
@@ -28,7 +32,7 @@
 
     <hr / class="hr-nav">
 
-    <main>
+    <main id="inicio">
       <div class="main-info">
         <div class="info">
           <h6>AGUA COM GÁS. SABORES NATURAIS.</h6>
@@ -43,23 +47,25 @@
         </div>
         <div class="main-info-button">
           <button>
-            <a href="">Descubra os sabores</a
+            <a href="#sabores">Descubra os sabores</a
             ><img src="assets/icons/seta-branca.svg" alt="icone" />
           </button>
         </div>
       </div>
       <div class="main-img">
-        <img src="assets/images/products/img-hero.png" alt="" />
+        <img src="assets/images/products/img-hero.png" alt="Lata AURA Pure Citrus, sabor limão siciliano" />
+        <p class="hero-caption">Pure Citrus — 330 ml <span>Role para descobrir ↓</span></p>
       </div>
     </main>
 
-    <section class="section-1">
+    <section class="section-1" id="experiencia">
       <div class="img-section-1">
         <img src="assets/images/products/img-section-1.png" alt="" />
         <p>PEQUENAS PAUSAS, NOVAS SENSAÇÕES</p>
       </div>
 
       <div class="info-section-1">
+        <p class="experiencia-label">02 / A experiência AURA</p>
         <h1>O frescor tem <br> uma nova <br> expressão</h1>
         <p class="subtitulo">
           AURA combina a leveza da água com gás com a <br> personalidade de sabores
@@ -71,16 +77,19 @@
       </div>
     </section>
 
-    <section class="section-2">
+    <section class="section-2" id="sabores">
       <div class="title-section-2">
+        <p class="legenda-produto legenda-secao-produtos">03 / Descubra seu favorito</p>
         <h1>
           Três sabores. <br />
           Infinitas sensações.
         </h1>
+        <p class="descricao-secao-produtos">Cada sabor traz uma maneira diferente de descobrir o frescor.</p>
       </div>
       <hr / class="hr-produtos">
 
-      <div class="produto">
+      <div class="produto produto-citrus">
+        <p class="legenda-produto legenda-sabor">01 / Cítrico</p>
         <div class="info-produto">
           <h1>Pure Citrus</h1>
           <p class="subtitulo-produto">LIMÃO SICILIANO</p>
@@ -96,7 +105,8 @@
 
       <hr / class="hr-produtos-2">
 
-      <div class="produto">
+      <div class="produto produto-peach">
+        <p class="legenda-produto legenda-sabor">02 / Frutado</p>
         <div class="img-produto">
           <img src="assets/images/products/product-2.png" alt="" />
         </div>
@@ -114,7 +124,8 @@
 
       <hr / class="hr-produtos-3">
 
-      <div class="produto">
+      <div class="produto produto-mint">
+        <p class="legenda-produto legenda-sabor">03 / Botânico</p>
         <div class="info-produto">
           <h1>Mint Breeze</h1>
           <p class="subtitulo-produto">HORTELÃ E LIMÃO</p>
@@ -129,10 +140,11 @@
       </div>
     </section>
 
-    <section class="section-4">
+    <section class="section-4" id="momentos">
       <div class="title-section-4">
         <div class="title">
-          <h1>Para todos os seus momentos</h1>
+          <p class="section-4-label">04 / O extraordinário do simples</p>
+          <h1>Para todos os <br> seus momentos.</h1>
         </div>
 
         <div class="title-2">
@@ -143,18 +155,27 @@
         </div>
       </div>
 
-      <div class="img-1">
-        <img src="assets/images/products/img-left-section-4.png" alt="" />
-      </div>
-      <div class="img-2-info">
-        <img src="assets/images/products/img-right-section-4.png" alt="" />
-        <h3>O melhor da vida cabe numa pausa</h3>
+      <div class="imgs">
+        <div class="img-1">
+          <img src="assets/images/products/img-left-section-4.png" alt="" />
+          <div class="img-1-caption">
+            <p>01 / Sem pressa. Com presença.</p>
+            <p>Ao ar livre</p>
+          </div>
+        </div>
+
+        <div class="img-2-info">
+          <img src="assets/images/products/img-right-section-4.png" alt="" />
+          <p class="section-4-label">02 / O seu tempo, mais leve.</p>
+          <h3>O melhor da vida cabe numa pausa</h3>
+        </div>
       </div>
     </section>
 
     <section class="section-5">
       <div class="titles-section-5">
-        <h1>Sinta a leveza de AURA.</h1>
+        <p class="section-5-label">05 / Seu próximo instante</p>
+        <h1 class="title">Sinta a leveza de AURA.</h1>
         <p>
           Encontre seu sabor. Descubra uma nova maneira de <br />
           refrescar seus momentos
@@ -163,8 +184,7 @@
 
       <div class="button-section-5">
         <button>
-          <a href="">Explorar sabores</a
-          ><img src="assets/icons/seta-branca.svg" alt="" />
+          <a href="#sabores">Explorar sabores</a>
         </button>
       </div>
 
@@ -195,10 +215,10 @@
         </div>
 
         <div class="links-footer">
-          <a href="">Inicio</a>
-          <a href="">Experiência</a>
-          <a href="">Sabores</a>
-          <a href="">Momentos</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#sabores">Sabores</a>
+          <a href="#momentos">Momentos</a>
         </div>
       </div>
 
@@ -212,5 +232,6 @@
         </div>
       </div>
     </footer>
+    <script src="src/js/main.js"></script>
   </body>
 </html>
