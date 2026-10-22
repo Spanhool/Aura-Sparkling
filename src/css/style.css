@@ -10,6 +10,16 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+button:focus-visible {
+  outline: 2px solid #56676b;
+  outline-offset: 4px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -1379,8 +1389,21 @@ footer {
   }
 }
 
-@media (max-width: 1023px) and (prefers-reduced-motion: reduce) {
-  .nav-toggle,
+@media (hover: hover) and (pointer: fine) {
+  .main-info-button button:hover,
+  .button-section-5 button:hover {
+    background-color: #3a505b;
+  }
+
+  .nav-bottom button:hover {
+    background-color: #eaf0ed;
+    color: #56676b;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button,
+  nav .nav-toggle,
   .nav-toggle span,
   .nav-links a {
     transition: none;
