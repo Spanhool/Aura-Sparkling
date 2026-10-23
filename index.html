@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,214 +8,237 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav data-menu-open="false">
         <div class="nav-logo">
           <p><span>AURA</span> SPARKLING</p>
         </div>
-        <button class="nav-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menu">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-links"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </button>
         <div class="nav-links" id="nav-links">
-          <a href="#inicio">Inicio</a>
+          <a href="#inicio">Início</a>
           <a href="#experiencia">Experiência</a>
           <a href="#sabores">Sabores</a>
           <a href="#momentos">Momentos</a>
         </div>
         <div class="nav-bottom">
-          <button>
+          <span class="nav-tagline">
             NATURALMENTE LEVE <img src="assets/icons/seta-azul.svg" alt="" />
-          </button>
+          </span>
         </div>
       </nav>
     </header>
 
-    <hr / class="hr-nav">
+    <hr class="hr-nav" />
 
-    <main id="inicio">
-      <div class="main-info">
-        <div class="info">
-          <h6>AGUA COM GÁS. SABORES NATURAIS.</h6>
-          <h1>
-            Leveza em <br />
-            cada instante.
-          </h1>
-          <p>
-            Água com gás e sabores naturais para <br> transformar pequenas pausas em
-            momentos <br> especiais.
+    <main>
+      <section class="hero" id="inicio">
+        <div class="main-info">
+          <div class="info">
+            <p class="hero-label">ÁGUA COM GÁS. SABORES NATURAIS.</p>
+            <h1 class="titulo-hero">
+              Leveza em <br />
+              cada instante.
+            </h1>
+            <p>
+              Água com gás e sabores naturais para <br />
+              transformar pequenas pausas em momentos <br />
+              especiais.
+            </p>
+          </div>
+          <div class="main-info-button">
+            <a href="#sabores"
+              ><span>Descubra os sabores</span
+              ><img src="assets/icons/seta-branca.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="main-img">
+          <img
+            src="assets/images/products/img-hero.png"
+            alt="Lata AURA Pure Citrus, sabor limão siciliano"
+          />
+          <p class="hero-caption">
+            Pure Citrus — 330 ml <span>Role para descobrir ↓</span>
           </p>
         </div>
-        <div class="main-info-button">
-          <button>
-            <a href="#sabores">Descubra os sabores</a
-            ><img src="assets/icons/seta-branca.svg" alt="icone" />
-          </button>
+      </section>
+
+      <section class="section-1" id="experiencia">
+        <div class="img-section-1">
+          <img src="assets/images/products/img-section-1.png" alt="" />
+          <p>PEQUENAS PAUSAS, NOVAS SENSAÇÕES</p>
         </div>
-      </div>
-      <div class="main-img">
-        <img src="assets/images/products/img-hero.png" alt="Lata AURA Pure Citrus, sabor limão siciliano" />
-        <p class="hero-caption">Pure Citrus — 330 ml <span>Role para descobrir ↓</span></p>
-      </div>
-    </main>
 
-    <section class="section-1" id="experiencia">
-      <div class="img-section-1">
-        <img src="assets/images/products/img-section-1.png" alt="" />
-        <p>PEQUENAS PAUSAS, NOVAS SENSAÇÕES</p>
-      </div>
+        <div class="info-section-1">
+          <p class="experiencia-label">02 / A experiência AURA</p>
+          <h2>
+            O frescor tem <br />
+            uma nova <br />
+            expressão
+          </h2>
+          <p class="subtitulo">
+            AURA combina a leveza da água com gás com a <br />
+            personalidade de sabores frutados. Uma <br />experiência criada para
+            quem aprecia os <br />
+            detalhes dos momentos mais simples.
+          </p>
+          <hr class="hr-section-1" />
+          <p class="frase-section-1">Natural no sabor. Especial na sensação.</p>
+        </div>
+      </section>
 
-      <div class="info-section-1">
-        <p class="experiencia-label">02 / A experiência AURA</p>
-        <h1>O frescor tem <br> uma nova <br> expressão</h1>
-        <p class="subtitulo">
-          AURA combina a leveza da água com gás com a <br> personalidade de sabores
-          frutados. Uma <br>experiência criada para quem aprecia os <br> detalhes dos
-          momentos mais simples.
-        </p>
-        <hr / class="hr-section-1">
-        <p class="frase-section-1">Natural no sabor. Especial na sensação.</p>
-      </div>
-    </section>
-
-    <section class="section-2" id="sabores">
-      <div class="title-section-2">
-        <p class="legenda-produto legenda-secao-produtos">03 / Descubra seu favorito</p>
-        <h1>
-          Três sabores. <br />
-          Infinitas sensações.
-        </h1>
-        <p class="descricao-secao-produtos">Cada sabor traz uma maneira diferente de descobrir o frescor.</p>
-      </div>
-      <hr / class="hr-produtos">
-
-      <div class="produto produto-citrus">
-        <p class="legenda-produto legenda-sabor">01 / Cítrico</p>
-        <div class="info-produto">
-          <h1>Pure Citrus</h1>
-          <p class="subtitulo-produto">LIMÃO SICILIANO</p>
-          <p class="descricao-produto">
-            O toque cítrico do limão siciliano em uma <br> experiência leve, vibrante
-            e refrescante.
+      <section class="section-2" id="sabores">
+        <div class="title-section-2">
+          <p class="legenda-produto legenda-secao-produtos">
+            03 / Descubra seu favorito
+          </p>
+          <h2>
+            Três sabores. <br />
+            Infinitas sensações.
+          </h2>
+          <p class="descricao-secao-produtos">
+            Cada sabor traz uma maneira diferente de descobrir o frescor.
           </p>
         </div>
-        <div class="img-produto">
-          <img src="assets/images/products/img-hero.png" alt="" />
-        </div>
-      </div>
+        <hr class="hr-produtos" />
 
-      <hr / class="hr-produtos-2">
-
-      <div class="produto produto-peach">
-        <p class="legenda-produto legenda-sabor">02 / Frutado</p>
-        <div class="img-produto">
-          <img src="assets/images/products/product-2.png" alt="" />
-        </div>
-
-        <div class="info-produto">
-          <h1>Peach Bloom</h1>
-          <p class="subtitulo-produto">PÊSSEGO</p>
-          <p class="descricao-produto">
-            A delicadeza do pêssego em uma <br> combinação suave, frutada e
-            envolvente.
-          </p>
-        </div>
-        
-      </div>
-
-      <hr / class="hr-produtos-3">
-
-      <div class="produto produto-mint">
-        <p class="legenda-produto legenda-sabor">03 / Botânico</p>
-        <div class="info-produto">
-          <h1>Mint Breeze</h1>
-          <p class="subtitulo-produto">HORTELÃ E LIMÃO</p>
-          <p class="descricao-produto">
-            O frescor da hortelã encontra a vivacidade <br> do limão em uma
-            combinação equilibrada.
-          </p>
-        </div>
-        <div class="img-produto">
-          <img src="assets/images/products/produto-3.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section class="section-4" id="momentos">
-      <div class="title-section-4">
-        <div class="title">
-          <p class="section-4-label">04 / O extraordinário do simples</p>
-          <h1>Para todos os <br> seus momentos.</h1>
-        </div>
-
-        <div class="title-2">
-          <p>
-            Uma pausa no meio do dia. Uma tarde ao ar livre. Uma boa conversa.
-            AURA acompanha o que torna cada instante especial.
-          </p>
-        </div>
-      </div>
-
-      <div class="imgs">
-        <div class="img-1">
-          <img src="assets/images/products/img-left-section-4.png" alt="" />
-          <div class="img-1-caption">
-            <p>01 / Sem pressa. Com presença.</p>
-            <p>Ao ar livre</p>
+        <div class="produto produto-citrus">
+          <p class="legenda-produto legenda-sabor">01 / Cítrico</p>
+          <div class="info-produto">
+            <h3>Pure Citrus</h3>
+            <p class="subtitulo-produto">LIMÃO SICILIANO</p>
+            <p class="descricao-produto">
+              O toque cítrico do limão siciliano em uma <br />
+              experiência leve, vibrante e refrescante.
+            </p>
+          </div>
+          <div class="img-produto">
+            <img src="assets/images/products/img-hero.png" alt="" />
           </div>
         </div>
 
-        <div class="img-2-info">
-          <img src="assets/images/products/img-right-section-4.png" alt="" />
-          <p class="section-4-label">02 / O seu tempo, mais leve.</p>
-          <h3>O melhor da vida cabe numa pausa</h3>
+        <hr class="hr-produtos-2" />
+
+        <div class="produto produto-peach">
+          <p class="legenda-produto legenda-sabor">02 / Frutado</p>
+          <div class="img-produto">
+            <img src="assets/images/products/product-2.png" alt="" />
+          </div>
+
+          <div class="info-produto">
+            <h3>Peach Bloom</h3>
+            <p class="subtitulo-produto">PÊSSEGO</p>
+            <p class="descricao-produto">
+              A delicadeza do pêssego em uma <br />
+              combinação suave, frutada e envolvente.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section-5">
-      <div class="titles-section-5">
-        <p class="section-5-label">05 / Seu próximo instante</p>
-        <h1 class="title">Sinta a leveza de AURA.</h1>
-        <p>
-          Encontre seu sabor. Descubra uma nova maneira de <br />
-          refrescar seus momentos
-        </p>
-      </div>
+        <hr class="hr-produtos-3" />
 
-      <div class="button-section-5">
-        <button>
+        <div class="produto produto-mint">
+          <p class="legenda-produto legenda-sabor">03 / Botânico</p>
+          <div class="info-produto">
+            <h3>Mint Breeze</h3>
+            <p class="subtitulo-produto">HORTELÃ E LIMÃO</p>
+            <p class="descricao-produto">
+              O frescor da hortelã encontra a vivacidade <br />
+              do limão em uma combinação equilibrada.
+            </p>
+          </div>
+          <div class="img-produto">
+            <img src="assets/images/products/produto-3.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-4" id="momentos">
+        <div class="title-section-4">
+          <div class="title">
+            <p class="section-4-label">04 / O extraordinário do simples</p>
+            <h2>
+              Para todos os <br />
+              seus momentos.
+            </h2>
+          </div>
+
+          <div class="title-2">
+            <p>
+              Uma pausa no meio do dia. Uma tarde ao ar livre. Uma boa conversa.
+              AURA acompanha o que torna cada instante especial.
+            </p>
+          </div>
+        </div>
+
+        <div class="imgs">
+          <div class="img-1">
+            <img src="assets/images/products/img-left-section-4.png" alt="" />
+            <div class="img-1-caption">
+              <p>01 / Sem pressa. Com presença.</p>
+              <p>Ao ar livre</p>
+            </div>
+          </div>
+
+          <div class="img-2-info">
+            <img src="assets/images/products/img-right-section-4.png" alt="" />
+            <p class="section-4-label">02 / O seu tempo, mais leve.</p>
+            <p class="moment-caption">O melhor da vida cabe numa pausa</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-5">
+        <div class="titles-section-5">
+          <p class="section-5-label">05 / Seu próximo instante</p>
+          <h2 class="title">Sinta a leveza de AURA.</h2>
+          <p>
+            Encontre seu sabor. Descubra uma nova maneira de <br />
+            refrescar seus momentos
+          </p>
+        </div>
+
+        <div class="button-section-5">
           <a href="#sabores">Explorar sabores</a>
-        </button>
-      </div>
+        </div>
 
-      <div class="products-section-5">
-        <img
-          src="assets/images/products/img-hero.png"
-          alt=""
-          class="produto-01"
-        />
-        <img
-          src="assets/images/products/product-2.png"
-          alt=""
-          class="produto-02"
-        />
-        <img
-          src="assets/images/products/produto-3.png"
-          alt=""
-          class="produto-03"
-        />
-      </div>
-    </section>
+        <div class="products-section-5">
+          <img
+            src="assets/images/products/img-hero.png"
+            alt=""
+            class="produto-01"
+          />
+          <img
+            src="assets/images/products/product-2.png"
+            alt=""
+            class="produto-02"
+          />
+          <img
+            src="assets/images/products/produto-3.png"
+            alt=""
+            class="produto-03"
+          />
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="footer-1">
         <div class="logo-footer">
-          <h1>AURA</h1>
+          <span class="footer-logo">AURA</span>
           <p>Leveza em cada instante</p>
         </div>
 
         <div class="links-footer">
-          <a href="#inicio">Inicio</a>
+          <a href="#inicio">Início</a>
           <a href="#experiencia">Experiência</a>
           <a href="#sabores">Sabores</a>
           <a href="#momentos">Momentos</a>
@@ -232,6 +255,14 @@
         </div>
       </div>
     </footer>
-    <script src="src/js/main.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Arquivos do projeto -->
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/animation.js"></script>
   </body>
 </html>

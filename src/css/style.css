@@ -10,12 +10,16 @@ html {
   scroll-behavior: smooth;
 }
 
-button {
+button,
+.main-info-button > a,
+.button-section-5 > a {
   cursor: pointer;
   transition: background-color 180ms ease, color 180ms ease;
 }
 
-button:focus-visible {
+button:focus-visible,
+.main-info-button > a:focus-visible,
+.button-section-5 > a:focus-visible {
   outline: 2px solid #56676b;
   outline-offset: 4px;
 }
@@ -74,7 +78,8 @@ nav {
   border-bottom: 1px solid #222e35;
 }
 
-nav button {
+nav button,
+.nav-tagline {
   background-color: transparent;
   border: none;
   display: flex;
@@ -84,11 +89,15 @@ nav button {
   letter-spacing: 1px;
 }
 
-nav button img {
+.nav-tagline img {
   width: 20px;
   height: 10px;
   align-items: center;
   display: flex;
+}
+
+.nav-tagline {
+  font-family: Arial, sans-serif;
 }
 
 .nav-toggle,
@@ -100,7 +109,7 @@ nav button img {
   color: #222e35;
 }
 
-main {
+.hero {
   background-color: #f7f9f8;
   display: flex;
   justify-content: space-between;
@@ -113,7 +122,8 @@ main {
   margin-top: 0;
 }
 
-.info h6 {
+.info .hero-label {
+  font-size: 0.67em;
   text-transform: uppercase;
   font-weight: 300;
   font-family: "Inter";
@@ -130,7 +140,7 @@ main {
   color: #222e35;
 }
 
-.info p {
+.info p:not(.hero-label) {
   margin-top: 20px;
   font-family: "Inter";
   font-weight: 300;
@@ -138,7 +148,7 @@ main {
   line-height: 25px;
 }
 
-.info p::after {
+.info p:not(.hero-label)::after {
   content: "";
   display: block;
   width: 60px;
@@ -151,7 +161,9 @@ main {
   margin-top: 50px;
 }
 
-.main-info-button button {
+.main-info-button > a {
+  width: fit-content;
+  text-decoration: none;
   display: flex;
   align-items: center;
   padding: 15px 25px;
@@ -161,14 +173,14 @@ main {
   font-family: "Inter";
 }
 
-.main-info-button button a {
+.main-info-button > a span {
   margin-right: 20px;
   color: #f7f9f8;
   text-decoration: none;
   font-size: 12px;
 }
 
-.main-info-button button img {
+.main-info-button > a img {
   width: 12px;
 }
 
@@ -218,7 +230,7 @@ main {
   display: none;
 }
 
-.info-section-1 h1 {
+.info-section-1 h2 {
   font-family: "Sora";
   font-weight: 400;
   font-size: 50px;
@@ -301,7 +313,7 @@ main {
   right: 0;
 }
 
-.title-section-2 h1 {
+.title-section-2 h2 {
   color: #222e35;
   font-family: "Sora";
   font-size: 50px;
@@ -348,7 +360,7 @@ main {
   min-width: 0;
 }
 
-.info-produto h1 {
+.info-produto h3 {
   color: #222e35;
   font-size: 50px;
   font-family: "Sora";
@@ -426,7 +438,7 @@ main {
   font-family: "Sora";
 }
 
-.title-section-4 .title h1 {
+.title-section-4 .title h2 {
   font-weight: 400;
   font-size: 60px;
   line-height: 1.15;
@@ -497,7 +509,7 @@ main {
   object-fit: cover;
 }
 
-.img-2-info h3 {
+.img-2-info .moment-caption {
   max-width: 360px;
   margin-top: 14px;
   color: #222e35;
@@ -543,7 +555,8 @@ main {
   justify-content: center;
 }
 
-.button-section-5 button {
+.button-section-5 > a {
+  font-size: 13.3333px;
   padding: 15px 25px;
   border-radius: 18px;
   border: none;
@@ -553,12 +566,8 @@ main {
   display: flex;
   margin-top: 30px;
   gap: 25px;
-}
-
-.button-section-5 button a {
   color: #ffff;
   text-decoration: none;
-  align-items: center;
 }
 
 .products-section-5 {
@@ -600,7 +609,8 @@ footer {
   padding-bottom: 60px;
 }
 
-.logo-footer h1 {
+.logo-footer .footer-logo {
+  display: block;
   font-family: "Sora";
   font-size: 72px;
   font-weight: 400;
@@ -656,7 +666,7 @@ footer {
     max-width: 1440px;
   }
 
-  main {
+  .hero {
     gap: 48px;
     min-height: 0;
     padding: 40px 8% 60px;
@@ -702,21 +712,21 @@ footer {
     flex: 1;
   }
 
-  .info-section-1 h1,
-  .title-section-2 h1,
-  .info-produto h1,
+  .info-section-1 h2,
+  .title-section-2 h2,
+  .info-produto h3,
   .titles-section-5 .title {
     font-size: clamp(36px, 3vw, 48px);
   }
 
   /* Deixa os parágrafos quebrarem conforme a largura disponível. */
-  .info p br,
+  .info p:not(.hero-label) br,
   .info-section-1 .subtitulo br,
   .descricao-produto br {
     display: none;
   }
 
-  .info p {
+  .info p:not(.hero-label) {
     max-width: 380px;
   }
 
@@ -757,7 +767,7 @@ footer {
     column-gap: 5%;
   }
 
-  .title-section-4 .title h1 {
+  .title-section-4 .title h2 {
     font-size: clamp(38px, 3.5vw, 56px);
   }
 
@@ -784,7 +794,7 @@ footer {
     gap: 8px 16px;
   }
 
-  .img-2-info h3 {
+  .img-2-info .moment-caption {
     font-size: clamp(22px, 1.8vw, 28px);
   }
 
@@ -820,7 +830,7 @@ footer {
     padding: 60px 8% 32px;
   }
 
-  .logo-footer h1 {
+  .logo-footer .footer-logo {
     font-size: 60px;
   }
 
@@ -929,7 +939,7 @@ footer {
     border-top: 1px solid #eaf0ed;
   }
 
-  main {
+  .hero {
     flex-direction: column;
     align-items: stretch;
     min-height: 0;
@@ -944,7 +954,7 @@ footer {
     margin-inline: auto;
   }
 
-  .info h6 {
+  .info .hero-label {
     font-size: 9px;
     letter-spacing: 1.3px;
     line-height: 1.6;
@@ -957,15 +967,15 @@ footer {
     line-height: 1.1;
   }
 
-  .info p {
+  .info p:not(.hero-label) {
     max-width: 300px;
     margin-top: 24px;
     font-size: 14px;
     line-height: 1.65;
   }
 
-  .info p br,
-  .info p::after {
+  .info p:not(.hero-label) br,
+  .info p:not(.hero-label)::after {
     display: none;
   }
 
@@ -973,13 +983,13 @@ footer {
     margin-top: 28px;
   }
 
-  .main-info-button button {
+  .main-info-button > a {
     padding: 0;
     border-radius: 28px;
     position: relative;
   }
 
-  .main-info-button button a {
+  .main-info-button > a span {
     display: block;
     width: 210px;
     margin-right: 0;
@@ -988,7 +998,7 @@ footer {
     line-height: 1.2;
   }
 
-  .main-info-button button img {
+  .main-info-button > a img {
     position: absolute;
     right: 22px;
     pointer-events: none;
@@ -1023,7 +1033,7 @@ footer {
     text-transform: uppercase;
   }
 
-  .info-section-1 h1 {
+  .info-section-1 h2 {
     margin: 0;
     font-size: clamp(30px, 7.5vw, 42px);
     line-height: 1.15;
@@ -1087,7 +1097,7 @@ footer {
     line-height: 1.6;
   }
 
-  .title-section-2 h1 {
+  .title-section-2 h2 {
     max-width: 270px;
     font-size: clamp(30px, 7.5vw, 42px);
     line-height: 1.15;
@@ -1122,7 +1132,7 @@ footer {
     display: contents;
   }
 
-  .info-produto h1 {
+  .info-produto h3 {
     grid-row: 1;
     grid-column: 1;
     font-size: clamp(24px, 6vw, 32px);
@@ -1191,7 +1201,7 @@ footer {
     padding-top: 0;
   }
 
-  .title-section-4 .title h1 {
+  .title-section-4 .title h2 {
     margin-top: 24px;
     font-size: clamp(30px, 7.5vw, 42px);
     letter-spacing: -1px;
@@ -1236,7 +1246,7 @@ footer {
     padding-top: 0;
   }
 
-  .img-2-info h3 {
+  .img-2-info .moment-caption {
     max-width: 280px;
     font-size: clamp(22px, 5.5vw, 28px);
     line-height: 1.2;
@@ -1279,13 +1289,9 @@ footer {
     display: none;
   }
 
-  .button-section-5 button {
+  .button-section-5 > a {
     margin-top: 28px;
-    padding: 0;
     border-radius: 28px;
-  }
-
-  .button-section-5 button a {
     display: block;
     padding: 15px 32px;
     font-size: 12px;
@@ -1334,7 +1340,7 @@ footer {
     padding-bottom: 28px;
   }
 
-  .logo-footer h1 {
+  .logo-footer .footer-logo {
     font-size: 48px;
     letter-spacing: -3px;
   }
@@ -1390,19 +1396,20 @@ footer {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .main-info-button button:hover,
-  .button-section-5 button:hover {
+  .main-info-button > a:hover,
+  .button-section-5 > a:hover {
     background-color: #3a505b;
-  }
-
-  .nav-bottom button:hover {
-    background-color: #eaf0ed;
-    color: #56676b;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   button,
+  .main-info-button > a,
+  .button-section-5 > a,
   nav .nav-toggle,
   .nav-toggle span,
   .nav-links a {
